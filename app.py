@@ -154,6 +154,29 @@ col1, col2 = st.columns([1,2])
 with col1:
     if os.path.exists("images/smng_logo.png"):
         st.image("images/smng_logo.png", width=220)
+        <style>
+/* Remove white container background */
+.section {
+    background-color: transparent !important;
+    padding: 0px !important;
+    margin-bottom: -20px !important;
+}
+
+/* Remove default block spacing */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
+
+/* Make logo centered vertically */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+</style>
+""", unsafe_allow_html=True)
 
 with col2:
     st.markdown("""
@@ -273,4 +296,5 @@ st.markdown("""
         © 2026 All Rights Reserved | Empowering Rural Innovation
     </div>
 </div>
+
 """, unsafe_allow_html=True)
